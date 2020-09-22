@@ -44,8 +44,8 @@ class Basket:
             raise ValueError("Exceeeds Max Limit")
         self._count = new_count
 
-    def removeItem(self, count=1):
-        new_count = self._count - count
+    def removeItem(self, count1=1):
+        new_count = self._count - count1
         if new_count < 0:
             raise ValueError("Trying to remove item when Basket is Empty")
         self._count = new_count
